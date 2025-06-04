@@ -10,7 +10,7 @@ import { connectDB } from './lib/db.js';
 const app = express();
 const PORT = process.env.PORT;
 
-app.use(cors({
+app.use(cors({  //used when frontend and backend are on different domains
     origin: "http://localhost:5173",
     credentials: true //alow frontend to send cookies
 }));

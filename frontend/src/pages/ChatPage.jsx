@@ -59,7 +59,7 @@ const ChatPage = () => {
 
         // you and me
         // if i start the chat => channelId: [myId, yourId]
-        // if you start the chat => channelId: [yourId, myId]  => [myId,yourId]
+        // if you start the chat => channelId: [yourId, myId]  => [myId,yourId] //therefore sorting is necessary
 
         const currChannel = client.channel("messaging", channelId, {
           members: [authUser._id, targetUserId],

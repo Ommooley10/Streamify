@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { MessageCircle } from "lucide-react";
 import { LANGUAGE_TO_FLAG } from "../constants";
 
 const DisplayFriendCard = ({ friend }) => {
@@ -9,7 +10,7 @@ const DisplayFriendCard = ({ friend }) => {
         <div className="flex items-center gap-3 mb-4">
           <div className="avatar size-12">
             <img
-              src={friend.profilePic}
+              src={friend.profilePic || "/default-avatar.png"}
               alt={friend.fullName}
               className="rounded-full w-12 h-12 object-cover"
             />
@@ -21,25 +22,27 @@ const DisplayFriendCard = ({ friend }) => {
 
         {/* LANGUAGES */}
         <div className="flex flex-wrap gap-2 mb-2">
-          <span className="badge badge-secondary text-xs">
+          <span className="badge badge-secondary text-xs flex items-center">
             {getLanguageFlag(friend.nativeLanguage)}
             Native: {friend.nativeLanguage}
           </span>
-          <span className="badge badge-outline text-xs">
+          <span className="badge badge-outline text-xs flex items-center">
             {getLanguageFlag(friend.learningLanguage)}
             Learning: {friend.learningLanguage}
           </span>
         </div>
 
         {/* BIO */}
-        <div className="mb-4">
-          <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
-            {friend.bio || "No bio available."}
-          </p>
-        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 italic">
+          {friend.bio || "No bio available."}
+        </p>
 
         {/* MESSAGE BUTTON */}
-        <Link to={`/chat/${friend._id}`} className="btn btn-outline w-full">
+        <Link
+          to={`/chat/${friend._id}`}
+          className="btn btn-sm btn-outline btn-primary w-full flex items-center justify-center gap-2 mt-3"
+        >
+          <MessageCircle className="w-4 h-4" />
           Message
         </Link>
       </div>
@@ -49,6 +52,7 @@ const DisplayFriendCard = ({ friend }) => {
 
 export default DisplayFriendCard;
 
+// Utility: Get language flag
 export function getLanguageFlag(language) {
   if (!language) return null;
 
@@ -58,7 +62,7 @@ export function getLanguageFlag(language) {
   if (countryCode) {
     return (
       <img
-        src={`https://flagcdn.com/24x18/${countryCode}.png`}
+        src={`https://flagcdn.com/24x18/${countryCode.toLowerCase()}.png`}
         alt={`${langLower} flag`}
         className="h-3 mr-1 inline-block"
       />

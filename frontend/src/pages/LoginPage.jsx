@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { ShipWheel, Eye, EyeOff, Mail, Lock, LogIn, ArrowRight, Users, Trophy, BookOpen } from "lucide-react"
 import { Link } from "react-router"

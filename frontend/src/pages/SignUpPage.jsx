@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { ShipWheel, Eye, EyeOff, CheckCircle2, Mail, User, Lock, Sparkles, Globe, MessageSquare } from "lucide-react"
 import { Link } from "react-router"

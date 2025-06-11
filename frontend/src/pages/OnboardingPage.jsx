@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import useAuthUser from "../hooks/useAuthUser"
 import { useMutation, useQueryClient } from "@tanstack/react-query"

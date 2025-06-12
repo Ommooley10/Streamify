@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { getUserFriends } from "../lib/api.js";
 import NoFriendsFound from "../components/NoFriendsFound.jsx";
-import DisplayFriendCard from "../components/displayFriendCard.jsx";
+import DisplayFriendCard from "../components/DisplayFriendCard.jsx";
 import { UsersIcon, HeartIcon, MessageCircleIcon, SparklesIcon } from "lucide-react";
 
 const FriendsPage = () => {

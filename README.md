@@ -1,6 +1,6 @@
 #  Streamify
 
-A real‑time, full‑featured language exchange platform created with the power and flexibility of the MERN stack. Streamify empowers users to connect with people across the world regardless of which tongue they speak—by seamlessly blending text chat, voice interactions, and face‑to‑face video conversations. Leveraging Stream’s chat and video APIs, every message, emoji reaction, and live video call flows instantly and reliably, creating an immersive, barrier‑free environment for cultural exchange, language practice, and genuine human connection. Whether you’re honing your fluency, discovering new idioms, or simply making friends from halfway around the world, Streamify brings people together in one intuitive, highly responsive platform.
+A real‑time, full‑featured **language exchange platform** created with the power and flexibility of the **MERN stack**. Streamify empowers users to connect with people across the world regardless of which tongue they speak—by seamlessly blending text chat, voice interactions, and face‑to‑face video conversations. Leveraging **Stream’s chat and video APIs**, every message, emoji reaction, and live video call flows instantly and reliably, creating an immersive, barrier‑free environment for cultural exchange, language practice, and genuine human connection. Whether you’re honing your fluency, discovering new idioms, or simply making friends from halfway around the world, Streamify brings people together in one intuitive, highly responsive platform.
 
 ---
 

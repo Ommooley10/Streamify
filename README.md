@@ -4,13 +4,6 @@ A real‑time, full‑featured language exchange platform created with the power
 
 ---
 
-##  Live Demo
-
-The app is deployed on Render as a single unified service.  
-🔗 [View Streamify](https://streamify-rb9i.onrender.com/)
-
----
-
 ##  Features
 
 - **User Authentication**  
@@ -63,6 +56,13 @@ npm run start
 ```
 
 3. Open your browser at http://localhost:5001
+
+---
+
+##  Deployment
+
+The app is deployed on Render as a single unified service.  
+🔗 [View Streamify](https://streamify-rb9i.onrender.com/)
 
 ---
 

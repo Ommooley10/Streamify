@@ -1,6 +1,6 @@
 #  Streamify
 
-A real‑time language exchange platform built with the MERN stack, where users can make friends from around the globe—no matter which language they speak. Chat one‑on‑one or face‑to‑face with video calls powered by Stream.
+A real‑time, full‑featured language exchange platform created with the power and flexibility of the MERN stack. Streamify empowers users to connect with people across the world regardless of which tongue they speak—by seamlessly blending text chat, voice interactions, and face‑to‑face video conversations. Leveraging Stream’s chat and video APIs, every message, emoji reaction, and live video call flows instantly and reliably, creating an immersive, barrier‑free environment for cultural exchange, language practice, and genuine human connection. Whether you’re honing your fluency, discovering new idioms, or simply making friends from halfway around the world, Streamify brings people together in one intuitive, highly responsive platform.
 
 ---
 
@@ -30,7 +30,7 @@ The app is deployed on Render as a single unified service.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend:**  
   - React  
@@ -48,7 +48,7 @@ The app is deployed on Render as a single unified service.
 
 ---
 
-## 📥 Running Locally
+##  Running Locally
 
 1. Build the project dependencies and assets:
 

@@ -18,6 +18,12 @@ app.use(cors({  //used when frontend and backend are on different domains
 }));
 app.use(express.json());
 app.use(cookieParser());
+
+app.use(
+  '/avatars',
+  express.static(path.join(__dirname, 'public', 'avatars'))
+);
+
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/chat", chatRoutes);

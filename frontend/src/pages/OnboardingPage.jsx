@@ -49,10 +49,17 @@ const OnboardingPage = () => {
   }
 
   const handleRandomAvatar = () => {
-    const idx = Math.floor(Math.random() * 100) + 1 // 1-100 included
-    const randomAvatar = `https://avatar.iran.liara.run/public/${idx}.png`
+    // We have exactly 21 offline avatars served from /avatars on the backend
+    const AVATAR_COUNT = 21
+    const idx = Math.floor(Math.random() * AVATAR_COUNT) + 1 // 1–21
+    // Use backend base URL via env var (in Vite: VITE_API_URL)
+    const apiBase = import.meta.env.VITE_API_URL || window.location.origin
+    const randomAvatar = `${apiBase}/avatars/${idx}.png`
 
-    setFormState({ ...formState, profilePic: randomAvatar })
+    setFormState(prev => ({
+      ...prev,
+      profilePic: randomAvatar,
+    }))
     toast.success("Random profile picture generated!")
   }
 

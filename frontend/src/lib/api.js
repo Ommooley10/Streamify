@@ -63,3 +63,9 @@ export async function getStreamToken() {
   const response = await axiosInstance.get("/chat/token");
   return response.data;
 }
+
+export function updateProfile(data) {
+  return axiosInstance
+    .put("/auth/profile", data)    // adjust path to match your mounting
+    .then(res => res.data);
+}

@@ -1,7 +1,9 @@
 import useAuthUser from "../hooks/useAuthUser.js"
 import PageLoader from "../components/PageLoader.jsx"
+import { useNavigate } from "react-router"
 
 const ProfilePage = () => {
+  const navigate = useNavigate();
   const { authUser, isLoading } = useAuthUser()
 
   if (isLoading) {
@@ -142,7 +144,7 @@ const ProfilePage = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 justify-center animate-fade-in-up">
-              <button className="btn btn-primary gap-2 hover:scale-105 hover:shadow-lg transition-all duration-300 group">
+              <button className="btn btn-primary gap-2 hover:scale-105 hover:shadow-lg transition-all duration-300 group" onClick={() => navigate("/edit-profile")}>
                 <svg className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
